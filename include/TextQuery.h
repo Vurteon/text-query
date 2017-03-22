@@ -16,7 +16,10 @@ public:
 	QueryResult query(const std::string&) const;
 
 private:
+	// Every string in this file is a line of ifstream.
 	std::shared_ptr<std::vector<std::string>> file;
+	// A map which key is a word, value is a set including all
+	// line numbers this word occurs.
 	std::map<std::string, std::shared_ptr<std::set<line_no>>> wm;
 };
 

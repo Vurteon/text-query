@@ -7,7 +7,7 @@
 
 
 class QueryBase {
-	// Quert class can access private member
+	// Query class can access private member
 	friend class Query;
 protected:
 	using line_no = TextQuery::line_no;
